@@ -21,8 +21,18 @@ estiver dentro do círculo, caso caia fora, não é contabilizado. A quantidade 
 dividido pelo número total de pontos multiplicado por quatro é aproximadamente igual ao valor de π,
 ou seja, 3.1415926. 
 
+Abaixo, vemos o resultado da simulação para n=50.000.
+
+![circPI-n50000](circPI-n50000.png)
+
 Podemos verificar nos gráficos a aproximação do valor de π em função do número de
 pontos; a linha vermelha é referente ao valor 3.1415926..., denotado por π.
 
-Abaixo, vemos o resultado da simulação para n=50.000.
+![pi-n50000](pi-n50000.png)
 
+Abaixo segue o histograma dos valores estimados para π pelo método de amostragem direta.
+
+![histograma](histograma.png)
+
+O histograma foi obtido através de 5 × 10^5 estimativas do número médio de pontos que foram sorteados
+no interior de um círculo de raio unitário inscrito em um quadrado de lado 2. Cada amostra consistiu de N = 2 × 10^4 sorteios. Podemos observar que o histograma é centrado em torno do valor 3, 14, com um máximo bem definido em torno deste valor e simetricamente disposto. Outrossim, a largura do histograma à meia altura nos dá informação sobre o erro em nossa estimativa.
