@@ -7,19 +7,11 @@ O método Monte Carlo foi formalizado em 1949, por meio do artigo intitulado “
 Considere um círculo de raio unitário inscrito em um quadrado de lado 2, conforme a figura 1. É
 evidente que a razão entre a área do círculo e do quadrado é igual a π/4.
 
-Se pontos são selecionados com probabilidade uniforme no interior do quadrado, a probabilidade que
-um desses pontos esteja no interior do círculo é justamente π/4.  A tarefa consistiu em gerar uma amostra
-de tamanho N de pontos. Conta-se como “sucesso” o ponto estar no interior do círculo. No caso de n
-sucessos temos que π/4 é aproximadamente n/m.
+Se pontos são selecionados com probabilidade uniforme no interior do quadrado, a probabilidade que um desses pontos esteja no interior do círculo é justamente π/4.  A tarefa consistiu em gerar uma amostra de tamanho N de pontos. Conta-se como “sucesso” o ponto estar no interior do círculo. No caso de n sucessos temos que π/4 é aproximadamente n/m.
 
 ![circulo](https://user-images.githubusercontent.com/71646387/148658141-f295b703-cc20-4cd3-9bab-79e14329c7e7.png)
 
-Utilizando um algoritmo simples de Monte Carlo para calcularmos o valor de π usando uma sequência
-de números aleatórios. Considerei um círculo de raio um inscrito no quadrado de lado dois; gerei
-aleatoriamente um conjunto de pontos com coordenadas dentro do quadrado, é contabilizado o ponto se
-estiver dentro do círculo, caso caia fora, não é contabilizado. A quantidade de pontos dentro do círculo
-dividido pelo número total de pontos multiplicado por quatro é aproximadamente igual ao valor de π,
-ou seja, 3.1415926. 
+Utilizando um algoritmo simples de Monte Carlo para calcularmos o valor de π usando uma sequência de números aleatórios. Considerei um círculo de raio um inscrito no quadrado de lado dois; gerei aleatoriamente um conjunto de pontos com coordenadas dentro do quadrado, é contabilizado o ponto se estiver dentro do círculo, caso caia fora, não é contabilizado. A quantidade de pontos dentro do círculo dividido pelo número total de pontos multiplicado por quatro é aproximadamente igual ao valor de π, ou seja, 3.1415926. 
 
 Abaixo, vemos o resultado da simulação para n=50.000.
 
@@ -34,5 +26,4 @@ Abaixo segue o histograma dos valores estimados para π pelo método de amostrag
 
 ![histograma](histograma.png)
 
-O histograma foi obtido através de 5 × 10^5 estimativas do número médio de pontos que foram sorteados
-no interior de um círculo de raio unitário inscrito em um quadrado de lado 2. Cada amostra consistiu de N = 2 × 10^4 sorteios. Podemos observar que o histograma é centrado em torno do valor 3, 14, com um máximo bem definido em torno deste valor e simetricamente disposto. Outrossim, a largura do histograma à meia altura nos dá informação sobre o erro em nossa estimativa.
+O histograma foi obtido através de 5 × 10^5 estimativas do número médio de pontos que foram sorteados no interior de um círculo de raio unitário inscrito em um quadrado de lado 2. Cada amostra consistiu de N = 2 × 10^4 sorteios. Podemos observar que o histograma é centrado em torno do valor 3, 14, com um máximo bem definido em torno deste valor e simetricamente disposto. Outrossim, a largura do histograma à meia altura nos dá informação sobre o erro em nossa estimativa.
